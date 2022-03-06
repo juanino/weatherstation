@@ -10,3 +10,7 @@ MQTT publisher for a display running on ESP8266s
 * joins a wifi
 * subscribes to a feed
 * change the feed name for each display you have 
+
+<img src="img/boards.jpg" width="350">
+<img src="img/boards2.jpg" width="350">
+<img src="img/display.jpg" width="350">

@@ -5,6 +5,10 @@ import json
 import pprint
 from time import sleep
 from config import *
+from datetime import datetime
+
+
+
 
 # setup pprint
 pp = pprint.PrettyPrinter(indent=4)
@@ -85,6 +89,26 @@ while True:
         aio.send_data('blue1', 'TEMP')
         aio.send_data('red1', temp)
         sleep(4)
+        # date
+        now = datetime.now()
+        month = (now.strftime('%b'))
+        month = month.upper()
+        print("month is" + month)
+        month_len = len(month)
+        while (month_len < 4):
+            print("padding")
+            month = month + " "
+            month_len = len(month)
+        day = (now.strftime('%d'))
+        day_len = len(day)
+        while (day_len < 4):
+            print("padding")
+            day = day + " "
+            day_len = len(day)
+        aio.send_data('red1',month)
+        aio.send_data('blue1',day)
+        sleep(10)
+        # back to weather
         print('sending data:XXX' + feel + "XXXX")
         aio.send_data('blue1', 'FEEL')
         aio.send_data('red1', feel)

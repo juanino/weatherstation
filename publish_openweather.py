@@ -63,7 +63,7 @@ while True:
     feel = (data['main']['feels_like'])
     try:
         feel = str(round(feel))
-        feel = feel + " F"
+        feel = feel + "F"
     except:
         feel = "--"
     w_length = len(feel)

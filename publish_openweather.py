@@ -37,7 +37,7 @@ while True:
     temp = (data['main']['temp'])
     temp = round(temp)
     temp = str(temp)
-    temp = temp + " F"
+    temp = temp + "F"
     length = len(temp)
 
     while (length < 4):
@@ -107,11 +107,12 @@ while True:
             day_len = len(day)
         aio.send_data('red1',month)
         aio.send_data('blue1',day)
-        sleep(10)
+        sleep(4)
         # back to weather
         print('sending data:XXX' + feel + "XXXX")
         aio.send_data('blue1', 'FEEL')
         aio.send_data('red1', feel)
+        sleep(6)
 
 
     # Adafruit IO is rate-limited for publishing

@@ -1,11 +1,20 @@
 # weatherstation
 MQTT publisher for a display running on ESP8266s
 
-# how to run
+# how to run in docker
 * copy config_sample_env to config.env and edit, then
 
 ```
 docker run -d --env-file=config.env   python-weatherstation
+```
+
+# run outside of docker
+* copy config_sample_env to config.env and edit, then
+
+```
+source config.env
+export  ADAFRUIT_IO_USERNAME  ADAFRUIT_IO_KEY  LAT  LON  APPID
+python3 publish_openweather.py
 ```
     
 # python code

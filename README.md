@@ -12,6 +12,8 @@ docker run -d --env-file=config.env   python-weatherstation
 * copy config_sample_env to config.env and edit, then
 
 ```
+pip3 install adafruit-io
+pip3 install requests
 source config.env
 export  ADAFRUIT_IO_USERNAME  ADAFRUIT_IO_KEY  LAT  LON  APPID
 python3 publish_openweather.py

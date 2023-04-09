@@ -10,7 +10,7 @@ docker build -t python-weatherstation .
 * copy config_sample_env to config.env and edit, then
 
 ```
-docker run -d --env-file=config.env --name=weatherstation  python-weatherstation
+docker run -d --restart unless-stopped --env-file=config.env --name=weatherstation  python-weatherstation
 ```
 
 # run outside of docker

@@ -4,10 +4,23 @@ import requests
 import json
 import pprint
 from time import sleep
-from config import *
+#from config import *
 from datetime import datetime
+import os
 
+# read config from env
 
+# Get environment variables
+ADAFRUIT_IO_USERNAME = os.getenv('ADAFRUIT_IO_USERNAME')
+ADAFRUIT_IO_KEY = os.environ.get('ADAFRUIT_IO_KEY')
+LAT = os.environ.get('LAT')
+LON = os.environ.get('LON')
+APPID = os.environ.get('APPID')
+APIURL="https://api.openweathermap.org/data/2.5/weather?lat=" + LAT + "&lon=" + LON + "&appid=" + APPID + "&units=imperial"
+
+print(ADAFRUIT_IO_USERNAME)
+print(ADAFRUIT_IO_KEY)
+print(APIURL)
 
 
 # setup pprint

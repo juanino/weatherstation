@@ -131,3 +131,6 @@ config.py
 
 # test files
 # publish_grogg.py
+
+# config
+config.env

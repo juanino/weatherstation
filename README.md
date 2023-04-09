@@ -1,11 +1,16 @@
 # weatherstation
 MQTT publisher for a display running on ESP8266s
 
+# how to build docker image
+```
+docker build -t python-weatherstation .
+```
+
 # how to run in docker
 * copy config_sample_env to config.env and edit, then
 
 ```
-docker run -d --env-file=config.env   python-weatherstation
+docker run -d --env-file=config.env --name=weatherstation  python-weatherstation
 ```
 
 # run outside of docker

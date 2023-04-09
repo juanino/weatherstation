@@ -3,6 +3,7 @@ MQTT publisher for a display running on ESP8266s
 
 # how to run
 * copy config_sample_env to config.env and edit, then
+
     docker run -d --env-file=config.env   python-weatherstation
 
 # python code

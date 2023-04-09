@@ -1,0 +1,8 @@
+# copy to config.env
+# pass into docker as --env-file=config.env
+# example: docker run -d --env-file-config.env python-weatherstation
+ADAFRUIT_IO_USERNAME=XXXXXXX
+ADAFRUIT_IO_KEY=aio_XXXXXXXXXXXXXXXXXXXXXXXXXXXX
+LAT=XX.XXXXXX
+LON=-XX.XXXXXX
+APPID=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
